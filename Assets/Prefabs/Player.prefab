@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1593730540510368391
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8292518801510809548}
+  m_Layer: 0
+  m_Name: HoldPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8292518801510809548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593730540510368391}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.4, y: 1.25, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3845810709315368728}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2766706378178575330
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,6 +580,8 @@ GameObject:
   - component: {fileID: 3362527763713096669}
   - component: {fileID: 5336932662949798870}
   - component: {fileID: 8345275875151262341}
+  - component: {fileID: 1447776756039430327}
+  - component: {fileID: 7314712898254375486}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -572,6 +605,7 @@ Transform:
   - {fileID: 2554218611642459578}
   - {fileID: 2247304496164244512}
   - {fileID: 3496086523288106470}
+  - {fileID: 8292518801510809548}
   - {fileID: 6750329671963231535}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -635,6 +669,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   horizontalTurnSpeed: 300
+--- !u!114 &1447776756039430327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5923878599675110866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15b71f6e3291788479cb16bdad58bce6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastAction:
+    cam: {fileID: 7110252021338975020}
+    actionLayer:
+      serializedVersion: 2
+      m_Bits: 128
+    actionDistance: 2
+--- !u!114 &7314712898254375486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5923878599675110866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13f13780de7cb4a42ba68ed8509fbb32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attachTransform: {fileID: 8292518801510809548}
+  raycastAction:
+    cam: {fileID: 7110252021338975020}
+    actionLayer:
+      serializedVersion: 2
+      m_Bits: 64
+    actionDistance: 4
 --- !u!1 &6521608162287608575
 GameObject:
   m_ObjectHideFlags: 0

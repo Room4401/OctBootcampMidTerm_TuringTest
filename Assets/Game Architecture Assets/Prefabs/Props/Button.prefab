@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8836720039487193862}
   - component: {fileID: 3112235735370615725}
   - component: {fileID: 2785159920739349844}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7759970487933935821}
   - component: {fileID: 2546051791827027744}
-  m_Layer: 0
+  - component: {fileID: -235200421911910726}
+  m_Layer: 7
   m_Name: Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +111,7 @@ Transform:
   m_GameObject: {fileID: 7228628399918692633}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.569, z: -5.016}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -138,3 +139,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.4140403, y: 0.41479278, z: 0.0637722}
   m_Center: {x: -0.002002135, y: 0.0002912283, z: 0.02723074}
+--- !u!114 &-235200421911910726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7228628399918692633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dd6d82b03b7bca42b9ee8aedf905e42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonRenderer: {fileID: 2785159920739349844}
+  hoverColor: {r: 1, g: 1, b: 0.49019608, a: 0.7058824}
+  OnPushButton:
+    m_PersistentCalls:
+      m_Calls: []

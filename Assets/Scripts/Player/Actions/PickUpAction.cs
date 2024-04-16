@@ -1,27 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PickUpAction : PlayerAction
 {
-    [Header("Pickup Interaction")]
-    [SerializeField] private Camera cam;
-    [SerializeField] private LayerMask pickupLayerMask;
-    [SerializeField] private float pickupDistance;
     [SerializeField] private Transform attachTransform;
+    [SerializeField] private RaycastAction raycastAction;
 
-    private RaycastHit hit;
     private IPickable pickable;
-
     private bool isPicked = false;
-    public override void Interact()
+
+    public override void TakeAction()
     {
         //Cast a ray
-        if (Physics.Raycast(GetCamRay(), out hit, pickupDistance, pickupLayerMask))
+        if (raycastAction.RayActionCheck())
         {
+            //Debug.Log("We hit " + raycastAction.hit.collider.name);
+            //Debug.DrawRay(raycastAction.hit.origin, raycastAction.hit.distance, Color.red);
             if (playerInput.interactInput && !isPicked)
             {
-                pickable = hit.transform.GetComponent<IPickable>();
+                pickable = raycastAction.hit.transform.GetComponent<IPickable>();
                 if (pickable == null) return;
 
                 pickable.OnPicked(attachTransform);
@@ -29,18 +25,10 @@ public class PickUpAction : PlayerAction
                 return;
             }
         }
-
         if (playerInput.interactInput && isPicked && pickable != null)
         {
             pickable.OnDropped();
             isPicked = false;
         }
-    }
-
-    private Ray GetCamRay()
-    {
-        Ray ray = cam.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
-
-        return ray;
     }
 }

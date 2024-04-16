@@ -12,8 +12,8 @@ public abstract class PlayerAction : MonoBehaviour
     }
     void Update()
     {
-        Interact();
+        TakeAction();
     }
 
-    public abstract void Interact();
+    public abstract void TakeAction();
 }

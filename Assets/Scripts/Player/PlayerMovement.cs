@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -64,9 +62,9 @@ public class PlayerMovement : MonoBehaviour
         playerVelocity.y += gravity * Time.deltaTime;
     }
 
-    //public float GetForwasdSpeed()
-    //{
-    //    return playerInput.vertical * moveSpeed * Time.deltaTime
-    //        * (playerInput.sprintInput ? sprintMultiplier : 1.0f);
-    //}
+    public float GetForwardSpeed()
+    {
+        return playerInput.vertical * moveSpeed * Time.deltaTime
+            * (playerInput.sprintInput ? sprintMultiplier : 1.0f);
+    }
 }
