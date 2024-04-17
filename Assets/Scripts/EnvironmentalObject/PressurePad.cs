@@ -1,13 +1,24 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PresurePad : MonoBehaviour
+public class PressurePad : MonoBehaviour
 {
     [SerializeField] private LayerMask pickUpLayer;
+    [SerializeField] private Material toggledMaterial;
     [SerializeField] private float checkRange;
 
     public UnityEvent OnPlaced;
     public UnityEvent OnRemoved;
+    public bool isToggled { get; private set; }
+
+    private Material defaultMaterial;
+    private Renderer padRenderer;
+
+    private void Start()
+    {
+        padRenderer = GetComponentInChildren<Renderer>();
+        defaultMaterial = padRenderer.material;
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -22,6 +33,8 @@ public class PresurePad : MonoBehaviour
             if (collision.gameObject.CompareTag("Pickable"))
             {
                 Debug.Log("Placed");
+                isToggled = true;
+                padRenderer.material = toggledMaterial;
                 OnPlaced?.Invoke();
                 break;
             }
@@ -32,6 +45,8 @@ public class PresurePad : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Pickable"))
         {
+            isToggled = false;
+            padRenderer.material = defaultMaterial;
             OnRemoved?.Invoke();
         }
     }

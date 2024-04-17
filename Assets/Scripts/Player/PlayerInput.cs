@@ -12,8 +12,8 @@ public class PlayerInput : MonoBehaviour
     public float mouseY { get; private set; }
     public bool sprintInput { get; private set; }
     public bool jumpInput {  get; private set; }
-    public bool primaryShoot {  get; private set; }
-    public bool secondaryShoot {  get; private set; }
+    public bool primaryInput {  get; private set; }
+    public bool secondaryInput {  get; private set; }
     public bool interactInput { get; private set; }
 
     public bool clear;
@@ -62,8 +62,8 @@ public class PlayerInput : MonoBehaviour
         jumpInput = jumpInput || Input.GetButtonDown("Jump");
 
         interactInput = interactInput || Input.GetKeyDown(KeyCode.E);
-        primaryShoot = primaryShoot || Input.GetButtonDown("Fire1");
-        secondaryShoot = secondaryShoot || Input.GetButtonDown("Fire2");
+        primaryInput = primaryInput || Input.GetButtonDown("Fire1");
+        secondaryInput = secondaryInput || Input.GetButtonDown("Fire2");
     }
 
     void ClearInput()
@@ -80,7 +80,7 @@ public class PlayerInput : MonoBehaviour
         jumpInput = false;
 
         interactInput = false;
-        primaryShoot = false;
-        secondaryShoot = false;
+        primaryInput = false;
+        secondaryInput = false;
     }
 }

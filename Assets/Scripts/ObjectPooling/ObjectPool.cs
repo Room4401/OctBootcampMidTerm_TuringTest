@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +5,6 @@ public class ObjectPool : MonoBehaviour
 {
     public GameObject objectToPool;
     public int startSize;
-
 
     [SerializeField] private List<PooledObject> activePool = new List<PooledObject>();
     [SerializeField] private List<PooledObject> usedPool = new List<PooledObject>();
@@ -26,7 +24,7 @@ public class ObjectPool : MonoBehaviour
         }
     }
 
-    public void AddNewObject()
+    private void AddNewObject()
     {
         tempObject = Instantiate(objectToPool, transform).GetComponent<PooledObject>();
         tempObject.gameObject.SetActive(false);
@@ -66,7 +64,7 @@ public class ObjectPool : MonoBehaviour
 
     public void RestoreObject(PooledObject obj)
     {
-        Debug.Log("Object has been restored");
+        //Debug.Log("Object has been restored");
         obj.gameObject.SetActive(false);
         usedPool.Remove(obj);
         activePool.Add(obj);

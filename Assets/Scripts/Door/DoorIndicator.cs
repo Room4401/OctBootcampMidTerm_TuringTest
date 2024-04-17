@@ -10,23 +10,16 @@ public class DoorIndicator : MonoBehaviour
     [SerializeField] private Color unlockedColor;
 
     private Color lockedColor;
-    private bool isLocked;
 
     private void Start()
     {
         lockedColor = indicatorTxt.color;
-        isLocked = door.isLocked;
-    }
-
-    private void Update()
-    {
         ChangeState();
     }
 
     public void ChangeState()
     {
-        isLocked = door.isLocked;
-        indicatorTxt.text = isLocked ? "Locked" : "Unlocked";
-        indicatorTxt.color = isLocked ? lockedColor : unlockedColor;
+        indicatorTxt.text = door.isLocked ? "Locked" : "Unlocked";
+        indicatorTxt.color = door.isLocked ? lockedColor : unlockedColor;
     }
 }

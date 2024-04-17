@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Pickable
+  - Bullet
+  - Rocket
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - UI
   - Pickable
   - Interactable
-  - 
-  - 
+  - Bullet
+  - Rocket
   - 
   - 
   - 

@@ -1,24 +1,20 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Door : MonoBehaviour
 {
-    [SerializeField] private int toggleCount;
     [SerializeField] private float waitTime = 0.5f;
 
+    public UnityEvent OnDoorStateChange;
     public bool isLocked { get; private set; }
 
-    private int toggledSwitch;
     private float timer = 0;
     private Animator doorAnim;
 
     private void Awake()
     {
+        isLocked = true;
         doorAnim = GetComponent<Animator>();
-    }
-
-    private void Update()
-    {
-        UnlockDoor();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -50,23 +46,15 @@ public class Door : MonoBehaviour
         }
     }
 
-    private void UnlockDoor()
+    public void UnlockDoor()
     {
-        if (toggledSwitch >= toggleCount)
-            isLocked = false;
-        else
-            isLocked = true;
+        isLocked = false;
+        OnDoorStateChange?.Invoke();
     }
 
-    public void ToggleIncrease()
+    public void LockDoor()
     {
-        toggledSwitch++;
-    }
-
-    public void ToggleDecrease()
-    {
-        if (toggledSwitch <= 0)
-            return;
-        toggledSwitch--;
+        isLocked = true;
+        OnDoorStateChange?.Invoke();
     }
 }

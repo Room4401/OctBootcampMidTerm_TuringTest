@@ -64,43 +64,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 44482258896600580}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2be3b3f69972f744b83dcbbf5498fc5, type: 3}
+  m_Script: {fileID: 11500000, guid: f21b99258fd35c047b592192346b004b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pickUpLayer:
     serializedVersion: 2
     m_Bits: 64
-  checkRange: 0.2
+  toggledMaterial: {fileID: 2100000, guid: 694c519bbe63d412b9bbc16984c6b5da, type: 2}
+  checkRange: 0.3
   OnPlaced:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnRemoved:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1970658682652724552
 GameObject:
   m_ObjectHideFlags: 0
