@@ -70,8 +70,8 @@ MonoBehaviour:
   pickUpLayer:
     serializedVersion: 2
     m_Bits: 64
-  toggledMaterial: {fileID: 2100000, guid: 694c519bbe63d412b9bbc16984c6b5da, type: 2}
-  checkRange: 0.3
+  toggledColor: {r: 0, g: 1, b: 0, a: 1}
+  checkRange: 0.5
   OnPlaced:
     m_PersistentCalls:
       m_Calls: []

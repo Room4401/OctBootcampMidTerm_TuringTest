@@ -43,11 +43,13 @@ public class Lift : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        other.transform.SetParent(transform);
+        if (other.gameObject.CompareTag("Player"))
+            other.transform.SetParent(transform);
     }
 
     private void OnTriggerExit(Collider other)
     {
-        other.transform.SetParent(null);
+        if (other.gameObject.CompareTag("Player"))
+            other.transform.SetParent(null);
     }
 }

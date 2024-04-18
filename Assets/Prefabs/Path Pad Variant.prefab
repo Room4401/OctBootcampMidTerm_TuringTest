@@ -65,13 +65,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1595838014056631986, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
+      propertyPath: m_Size.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595838014056631986, guid: 4045e86ed92c2de40b2679c5d824cb6a,
+        type: 3}
       propertyPath: m_Size.y
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1595838014056631986, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
+      propertyPath: m_Size.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595838014056631986, guid: 4045e86ed92c2de40b2679c5d824cb6a,
+        type: 3}
       propertyPath: m_Center.y
-      value: 0.92
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1595838014056631986, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
@@ -154,13 +164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3922623697071633583}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c69a4d78dfc82704098259d0d17d11d7, type: 3}
+  m_Script: {fileID: 11500000, guid: bebf9d62d7b225a469e802c2ad48fe0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toggledMaterial: {fileID: 2100000, guid: 694c519bbe63d412b9bbc16984c6b5da, type: 2}
-  OnStepped:
-    m_PersistentCalls:
-      m_Calls: []
-  OnRepeatedStep:
-    m_PersistentCalls:
-      m_Calls: []
+  toggledColor: {r: 0, g: 0, b: 0, a: 1}

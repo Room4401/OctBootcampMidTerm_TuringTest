@@ -1,17 +1,16 @@
+using System;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class PathPad : MonoBehaviour
 {
-    [SerializeField] private Material toggledMaterial;
+    [SerializeField] private Color toggledColor;
 
-    public UnityEvent OnStepped;
-    public UnityEvent OnRepeatedStep;
+    public Action<PathPad> OnTriggered;
     public bool isToggled { get; private set; }
 
     private Renderer padRenderer;
 
-    private void Start()
+    private void Awake()
     {
         isToggled = false;
         padRenderer = GetComponentInChildren<Renderer>();
@@ -23,14 +22,10 @@ public class PathPad : MonoBehaviour
         {
             if (!isToggled)
             {
-                Debug.Log("Steped");
+                Debug.Log(other.gameObject.name);
                 isToggled = true;
-                padRenderer.material = toggledMaterial;
-                OnStepped?.Invoke();
-            }
-            else
-            {
-                OnRepeatedStep?.Invoke();
+                padRenderer.material.color = toggledColor;
+                OnTriggered(this);
             }
         }
     }

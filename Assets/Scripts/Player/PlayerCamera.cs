@@ -25,7 +25,7 @@ public class PlayerCamera : MonoBehaviour
     {
         camXRoatation += (invertMouse ? 1 : -1) * verticalTurnSpeed
             * PlayerInput.GetInstance().mouseY * Time.deltaTime;
-        camXRoatation = Mathf.Clamp(camXRoatation, -60.0f, 50.0f);
+        camXRoatation = Mathf.Clamp(camXRoatation, -70.0f, 50.0f);
 
         transform.localRotation = Quaternion.Euler(camXRoatation, 0, 0);
     }

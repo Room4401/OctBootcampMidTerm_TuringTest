@@ -5,35 +5,41 @@ using UnityEngine.Events;
 public class PathPuzzle : MonoBehaviour
 {
     public UnityEvent OnSolved;
-    public UnityEvent OnUnsolved;
-    public bool puzzleSolved { get; private set; }
+    public UnityEvent OnFailed;
 
-    private List<PathPad> togglePads = new List<PathPad>();
+    private Dictionary<int, bool> pathPads = new Dictionary<int, bool>();
 
     private void Start()
     {
-        puzzleSolved = false;
         foreach (PathPad pad in GetComponentsInChildren<PathPad>())
-            togglePads.Add(pad);
+        {
+            pathPads.Add(pad.GetInstanceID(), pad.isToggled);
+            pad.OnTriggered += UpdatePuzzleState;
+        }
     }
 
-    public void UpdatePuzzleState()
+    private void UpdatePuzzleState(PathPad pad)
     {
-        int count = 0;
-        foreach (PathPad pad in togglePads)
+        if (!pathPads[pad.GetInstanceID()])
         {
-            if (pad.GetComponent<PathPad>().isToggled)
-                count++;
+            pathPads[pad.GetInstanceID()] = pad.isToggled;
+            CheckForSolve();
         }
-        if (count < togglePads.Count)
+        else
         {
-            puzzleSolved = false;
-            OnUnsolved?.Invoke();
+            GameManager.GetInstance().Changestate(GameManager.GameState.GameOver);
+            OnFailed?.Invoke();
+            return;
         }
-        else if (count == togglePads.Count)
+    }
+
+    private void CheckForSolve()
+    {
+        foreach (var pad in pathPads)
         {
-            puzzleSolved = true;
-            OnSolved?.Invoke();
+            if (!pad.Value)
+                return;
         }
+        OnSolved?.Invoke();
     }
 }

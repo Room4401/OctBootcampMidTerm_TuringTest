@@ -6,34 +6,31 @@ public class SimplePuzzle : MonoBehaviour
 {
     public UnityEvent OnSolved;
     public UnityEvent OnUnsolved;
-    public bool puzzleSolved { get; private set; }
 
-    private List<PathPad> togglePads = new List<PathPad>();
+    private Dictionary<int, bool> pressurePads = new Dictionary<int, bool>();
 
     private void Start()
     {
-        puzzleSolved = false;
-        foreach (PathPad pad in GetComponentsInChildren<PathPad>())
-            togglePads.Add(pad);
+        foreach (PressurePad pad in GetComponentsInChildren<PressurePad>())
+            pressurePads.Add(pad.GetInstanceID(), pad.isToggled);
     }
 
-    public void UpdatePuzzleState()
+    public void UpdatePuzzleState(PressurePad pad)
     {
-        int count = 0;
-        foreach (PathPad pad in togglePads)
+        pressurePads[pad.GetInstanceID()] = pad.isToggled;
+        CheckForSolve();
+    }
+
+    private void CheckForSolve()
+    {
+        foreach (var pad in pressurePads)
         {
-            if (pad.GetComponent<PathPad>().isToggled)
-                count++;
+            if (!pad.Value)
+            {
+                OnUnsolved?.Invoke();
+                return;
+            }
         }
-        if (count < togglePads.Count)
-        {
-            puzzleSolved = false;
-            OnUnsolved?.Invoke();
-        }
-        else if (count == togglePads.Count)
-        {
-            puzzleSolved = true;
-            OnSolved?.Invoke();
-        }
+        OnSolved?.Invoke();
     }
 }

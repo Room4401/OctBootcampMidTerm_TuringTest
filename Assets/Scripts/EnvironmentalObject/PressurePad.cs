@@ -1,40 +1,39 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class PressurePad : MonoBehaviour
 {
     [SerializeField] private LayerMask pickUpLayer;
-    [SerializeField] private Material toggledMaterial;
+    [SerializeField] private Color toggledColor;
     [SerializeField] private float checkRange;
 
-    public UnityEvent OnPlaced;
-    public UnityEvent OnRemoved;
+    public UnityEvent OnPlaced, OnRemoved;
     public bool isToggled { get; private set; }
 
-    private Material defaultMaterial;
+    private Color defaultColor;
     private Renderer padRenderer;
 
     private void Start()
     {
+        isToggled = false;
         padRenderer = GetComponentInChildren<Renderer>();
-        defaultMaterial = padRenderer.material;
+        defaultColor = padRenderer.material.color;
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, checkRange, pickUpLayer);
+        Vector3 checkBox = GetComponent<Collider>().bounds.extents / 2;
+        checkBox.y *= 3;
 
-        Debug.Log(colliders.Length);
+        Collider[] colliders = Physics.OverlapBox(transform.position, checkBox, Quaternion.identity, pickUpLayer);
 
         foreach (Collider collider in colliders)
         {
-            Debug.Log(collider.gameObject.name);
-
             if (collision.gameObject.CompareTag("Pickable"))
             {
-                Debug.Log("Placed");
                 isToggled = true;
-                padRenderer.material = toggledMaterial;
+                padRenderer.material.color = toggledColor;
                 OnPlaced?.Invoke();
                 break;
             }
@@ -46,7 +45,7 @@ public class PressurePad : MonoBehaviour
         if (collision.gameObject.CompareTag("Pickable"))
         {
             isToggled = false;
-            padRenderer.material = defaultMaterial;
+            padRenderer.material.color = defaultColor;
             OnRemoved?.Invoke();
         }
     }

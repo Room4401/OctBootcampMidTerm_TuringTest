@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5775810634095809089}
   - component: {fileID: 6610585423570374792}
-  - component: {fileID: 5879313566751439024}
   m_Layer: 0
   m_Name: Turret
   m_TagString: Untagged
@@ -56,23 +55,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.023831151, y: 0.036890343, z: 0.024031078}
   m_Center: {x: -0.00009998201, y: 0.018441075, z: -0.000000008245486}
---- !u!114 &5879313566751439024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6587672820954958075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a32e9281f846774bb0435604cf9ff26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  turretEye: {fileID: 1612876126489552184}
-  layer:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  attackDistance: 5
 --- !u!1 &7475912326584156362
 GameObject:
   m_ObjectHideFlags: 0
