@@ -1199,7 +1199,7 @@ Transform:
   m_GameObject: {fileID: 66328609}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -902.0848, y: -840.7259, z: -1.8746338}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2920,7 +2920,7 @@ Transform:
   m_GameObject: {fileID: 173734902}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -853.66187, y: -836.3056, z: 30.763805}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5131,7 +5131,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 825221792}
+      objectReference: {fileID: 173734905}
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -5140,12 +5140,12 @@ PrefabInstance:
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EndLevel
+      value: FinishLevel
       objectReference: {fileID: 0}
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelManager, Assembly-CSharp
+      value: ChangeStateHelper, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
@@ -9616,18 +9616,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: DelayedSetActive, Assembly-CSharp
         m_MethodName: Deactivate
         m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 5
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 173734905}
-        m_TargetAssemblyTypeName: ChangeStateHelper, Assembly-CSharp
-        m_MethodName: StartLevel
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16151,7 +16139,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1808587974}
+      objectReference: {fileID: 173734905}
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -16160,12 +16148,12 @@ PrefabInstance:
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EndLevel
+      value: FinishLevel
       objectReference: {fileID: 0}
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelManager, Assembly-CSharp
+      value: ChangeStateHelper, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
@@ -16614,32 +16602,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 173734905}
-        m_TargetAssemblyTypeName: ChangeStateHelper, Assembly-CSharp
-        m_MethodName: StartLevel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 5
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   onLevelEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 173734905}
-        m_TargetAssemblyTypeName: ChangeStateHelper, Assembly-CSharp
-        m_MethodName: FinishLevel
-        m_Mode: 1
+      - m_Target: {fileID: 1680485351}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1680485355}
+        m_TargetAssemblyTypeName: DelayedSetActive, Assembly-CSharp
+        m_MethodName: Deactivate
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1001 &830668958
 PrefabInstance:
@@ -18459,7 +18447,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2063877082}
+      objectReference: {fileID: 173734905}
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -18468,12 +18456,12 @@ PrefabInstance:
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EndLevel
+      value: FinishLevel
       objectReference: {fileID: 0}
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelManager, Assembly-CSharp
+      value: ChangeStateHelper, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
@@ -20200,7 +20188,7 @@ Transform:
   m_GameObject: {fileID: 1005555320}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 898.0962, y: 839.12744, z: 9.785224}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20349,7 +20337,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 825221792}
+      objectReference: {fileID: 173734905}
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -20363,7 +20351,7 @@ PrefabInstance:
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelManager, Assembly-CSharp
+      value: ChangeStateHelper, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
@@ -37916,15 +37904,27 @@ MonoBehaviour:
   onLevelEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 173734905}
-        m_TargetAssemblyTypeName: ChangeStateHelper, Assembly-CSharp
-        m_MethodName: FinishLevel
-        m_Mode: 1
+      - m_Target: {fileID: 1680485351}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1680485355}
+        m_TargetAssemblyTypeName: DelayedSetActive, Assembly-CSharp
+        m_MethodName: Deactivate
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -40570,7 +40570,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2063877082}
+      objectReference: {fileID: 173734905}
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -40584,7 +40584,7 @@ PrefabInstance:
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelManager, Assembly-CSharp
+      value: ChangeStateHelper, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
@@ -42101,30 +42101,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 173734905}
-        m_TargetAssemblyTypeName: ChangeStateHelper, Assembly-CSharp
-        m_MethodName: StartLevel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 5
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   onLevelEnd:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 173734905}
-        m_TargetAssemblyTypeName: ChangeStateHelper, Assembly-CSharp
-        m_MethodName: FinishLevel
-        m_Mode: 1
+      - m_Target: {fileID: 1680485351}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1680485355}
+        m_TargetAssemblyTypeName: DelayedSetActive, Assembly-CSharp
+        m_MethodName: Deactivate
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -44827,7 +44827,7 @@ PrefabInstance:
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 457083016}
+      objectReference: {fileID: 173734905}
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -44841,7 +44841,7 @@ PrefabInstance:
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
       propertyPath: OnTriggered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LevelManager, Assembly-CSharp
+      value: ChangeStateHelper, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5993742756127777047, guid: f43565e01015eae45bb68c6c8e41c8c1,
         type: 3}
