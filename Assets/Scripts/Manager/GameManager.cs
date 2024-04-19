@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,7 +13,8 @@ public class GameManager : MonoBehaviour
     private LevelManager currentLevel;
     private int currentLevelIndex = 0;
 
-    public Action<GameState> OnStateChange;
+    public Action<GameState, int> OnStateChange;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -47,7 +49,7 @@ public class GameManager : MonoBehaviour
         currentState = state;
         currentLevel = levels[currentLevelIndex];
 
-        OnStateChange(currentState);
+        OnStateChange(currentState, currentLevelIndex);
         switch (currentState)
         {
             case GameState.Briefing:
@@ -66,20 +68,19 @@ public class GameManager : MonoBehaviour
                 GameEnd();
                 break;
         }
-
     }
 
     private void StartBriefing()
     {
         Debug.Log("Well, briefing Started");
-        isInputActive = false;
-        Changestate(GameState.LevelStart);
+        DisableControl();
     }
 
     private void StartLevel()
     {
         Debug.Log("Well, Level Initialised");
-        isInputActive = true;
+        if (!isInputActive)
+            isInputActive = true;
         currentLevel.StartLevel();
     }
 
@@ -87,18 +88,19 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Well, Level Completed");
         currentLevelIndex++;
-        Changestate(GameState.LevelStart);
     }
 
     private void GameOver()
     {
         Debug.Log("Well, Level Game Over and You Lose");
+        DisableControl();
         UnlockCursor();
     }
 
     private void GameEnd()
     {
         Debug.Log("Well, Game has Ended and You Win");
+        DisableControl();
         UnlockCursor();
     }
 
@@ -106,6 +108,11 @@ public class GameManager : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+    }
+
+    private void DisableControl()
+    {
+        isInputActive = false;
     }
 
     public enum GameState
