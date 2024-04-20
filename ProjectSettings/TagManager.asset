@@ -8,6 +8,7 @@ TagManager:
   - Pickable
   - Bullet
   - Rocket
+  - CorrectAnswer
   layers:
   - Default
   - TransparentFX

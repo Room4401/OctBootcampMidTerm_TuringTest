@@ -22,7 +22,6 @@ public class PathPad : MonoBehaviour
         {
             if (!isToggled)
             {
-                Debug.Log(other.gameObject.name);
                 isToggled = true;
                 padRenderer.material.color = toggledColor;
                 OnTriggered(this);

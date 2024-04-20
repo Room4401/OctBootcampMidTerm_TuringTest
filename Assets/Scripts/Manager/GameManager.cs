@@ -87,8 +87,8 @@ public class GameManager : MonoBehaviour
     private void CompleteLevel()
     {
         Debug.Log("Well, Level Completed");
-        currentLevel.EndLevel();
         currentLevelIndex++;
+        currentLevel.EndLevel();
     }
 
     private void GameOver()

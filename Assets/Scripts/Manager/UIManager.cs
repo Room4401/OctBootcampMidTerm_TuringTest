@@ -30,7 +30,7 @@ public class UIManager : MonoBehaviour
             case GameManager.GameState.Briefing:
                 message = "Welcome to the Turing Test, "
                     + "You will be able to move around with the W, A, S, D button, "
-                    + "SPACE to jump, E to interact, "
+                    + "SPACE to jump, E to pick up / interact, "
                     + "shoot bullet with LEFT mouse button, "
                     + "and rocket with RIGHT mouse button.";
                 break;
@@ -57,12 +57,15 @@ public class UIManager : MonoBehaviour
         switch (level)
         {
             case 1:
+                message = "Welcome to the second test";
                 break;
             case 2:
+                message = "For the third test, You will have to walk over every tile without stepping on the same one.";
                 break;
             case 3:
-                break;
-            case 4:
+                message = "Welcome to the fourth and the last test!"
+                    + " In this test, there will be a correct patten which will unlock the door. "
+                    + "Lookout for hints that may help you in solving the puzzle";
                 break;
         }
     }
@@ -72,14 +75,13 @@ public class UIManager : MonoBehaviour
         switch (level)
         {
             case 0:
+                message = "Nice Work! Please proceed to the next test.";
                 break;
             case 1:
+                message = "Fantastic!";
                 break;
             case 2:
-                break;
-            case 3:
-                break;
-            case 4:
+                message = "Impressive! Your performance has exceed our expectation.";
                 break;
         }
     }

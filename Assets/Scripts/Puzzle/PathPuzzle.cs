@@ -38,7 +38,9 @@ public class PathPuzzle : MonoBehaviour
         foreach (var pad in pathPads)
         {
             if (!pad.Value)
+            {
                 return;
+            }
         }
         OnSolved?.Invoke();
     }
