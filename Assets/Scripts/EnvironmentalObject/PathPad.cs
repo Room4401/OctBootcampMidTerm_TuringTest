@@ -24,8 +24,8 @@ public class PathPad : MonoBehaviour
             {
                 isToggled = true;
                 padRenderer.material.color = toggledColor;
-                OnTriggered(this);
             }
+            OnTriggered(this);
         }
     }
 }

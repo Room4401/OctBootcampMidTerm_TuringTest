@@ -9,7 +9,6 @@ public class GameOverZone : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            GameManager.GetInstance().Changestate(GameManager.GameState.GameOver);
             OnEnterZone?.Invoke();
         }
     }

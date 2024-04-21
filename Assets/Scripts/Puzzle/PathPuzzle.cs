@@ -27,6 +27,7 @@ public class PathPuzzle : MonoBehaviour
         }
         else
         {
+            Debug.Log("puzzle failed");
             GameManager.GetInstance().Changestate(GameManager.GameState.GameOver);
             OnFailed?.Invoke();
             return;

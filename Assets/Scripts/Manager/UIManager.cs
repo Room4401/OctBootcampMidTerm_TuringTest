@@ -1,11 +1,9 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class UIManager : MonoBehaviour
 {
     public GameObject messageTxt;
-    public UnityEvent OnMessageUpdate;
 
     private bool offPath = false;
     private string message;
@@ -20,7 +18,6 @@ public class UIManager : MonoBehaviour
     {
         StateMessage(state, level);
         messageTxt.GetComponentInChildren<TMP_Text>().text = message;
-        OnMessageUpdate?.Invoke();
     }
 
     private void StateMessage(GameManager.GameState state, int level)
