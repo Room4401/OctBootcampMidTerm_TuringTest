@@ -2710,12 +2710,12 @@ PrefabInstance:
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnPlaced.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnRemoved.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
@@ -4671,12 +4671,12 @@ PrefabInstance:
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnPlaced.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnRemoved.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
@@ -4721,12 +4721,12 @@ PrefabInstance:
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnPlaced.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SimplePuzzle, Assembly-CSharp
+      value: Puzzle, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnRemoved.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SimplePuzzle, Assembly-CSharp
+      value: Puzzle, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
@@ -5050,12 +5050,12 @@ PrefabInstance:
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnPlaced.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnRemoved.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
@@ -10825,12 +10825,12 @@ PrefabInstance:
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnPlaced.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnRemoved.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
@@ -12352,12 +12352,12 @@ PrefabInstance:
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnPlaced.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnRemoved.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
@@ -15070,12 +15070,12 @@ PrefabInstance:
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnPlaced.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnRemoved.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
@@ -16124,12 +16124,12 @@ PrefabInstance:
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnPlaced.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnRemoved.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
@@ -16295,34 +16295,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnSolved:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 488245679}
-        m_TargetAssemblyTypeName: MultiPuzzle, Assembly-CSharp
-        m_MethodName: CheckForSolve
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnUnsolved:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 488245679}
-        m_TargetAssemblyTypeName: MultiPuzzle, Assembly-CSharp
-        m_MethodName: CheckForSolve
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1001 &738207183
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17086,12 +17062,12 @@ PrefabInstance:
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnPlaced.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnRemoved.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
@@ -23566,34 +23542,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnSolved:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 488245679}
-        m_TargetAssemblyTypeName: MultiPuzzle, Assembly-CSharp
-        m_MethodName: CheckForSolve
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnUnsolved:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 488245679}
-        m_TargetAssemblyTypeName: MultiPuzzle, Assembly-CSharp
-        m_MethodName: CheckForSolve
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1001 &1084286892
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25221,6 +25173,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnUnsolved:
+    m_PersistentCalls:
+      m_Calls: []
   OnFailed:
     m_PersistentCalls:
       m_Calls:
@@ -25282,7 +25237,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
 --- !u!1001 &1164838056
 PrefabInstance:
@@ -27300,12 +27255,12 @@ PrefabInstance:
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnPlaced.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnRemoved.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
@@ -32474,12 +32429,12 @@ PrefabInstance:
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnPlaced.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnRemoved.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
@@ -32884,12 +32839,12 @@ PrefabInstance:
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnPlaced.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnRemoved.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
@@ -37725,12 +37680,12 @@ PrefabInstance:
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnPlaced.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnRemoved.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
@@ -37967,12 +37922,12 @@ PrefabInstance:
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnPlaced.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnRemoved.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
@@ -38017,12 +37972,12 @@ PrefabInstance:
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnPlaced.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SimplePuzzle, Assembly-CSharp
+      value: Puzzle, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnRemoved.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SimplePuzzle, Assembly-CSharp
+      value: Puzzle, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
@@ -40696,7 +40651,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1876921072}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b3fd0798fae580488e9e493c3a2a9ba, type: 3}
+  m_Script: {fileID: 11500000, guid: 536076fb7b494d54fa4b767c4c6acb9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   OnSolved:
@@ -44167,12 +44122,12 @@ PrefabInstance:
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnPlaced.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnRemoved.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
@@ -45742,12 +45697,12 @@ PrefabInstance:
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnPlaced.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}
       propertyPath: OnRemoved.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7017605796746710603, guid: 4045e86ed92c2de40b2679c5d824cb6a,
         type: 3}

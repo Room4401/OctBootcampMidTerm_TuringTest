@@ -72,13 +72,11 @@ public class GameManager : MonoBehaviour
 
     private void StartBriefing()
     {
-        Debug.Log("Well, briefing Started");
         DisableControl();
     }
 
     private void StartLevel()
     {
-        Debug.Log("Well, Level Initialised");
         if (!isInputActive)
             isInputActive = true;
         currentLevel.StartLevel();
@@ -86,21 +84,18 @@ public class GameManager : MonoBehaviour
 
     private void CompleteLevel()
     {
-        Debug.Log("Well, Level Completed");
         currentLevelIndex++;
         currentLevel.EndLevel();
     }
 
     private void GameOver()
     {
-        Debug.Log("Well, Level Game Over and You Lose");
         DisableControl();
         UnlockCursor();
     }
 
     private void GameEnd()
     {
-        Debug.Log("Well, Game has Ended and You Win");
         DisableControl();
         UnlockCursor();
     }
